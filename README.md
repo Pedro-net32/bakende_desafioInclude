@@ -59,62 +59,55 @@ http://localhost:3000
 
 
 black_end/
-│
-├──node_modules
-│
-│
-├── src/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   ├── jogoController.js
-│   │   ├── avaliacaoController.js
-│   │   └── authController.js
-│   ├── models/
-│   │   ├── jogoModel.js
-│   │   ├── avaliacaoModel.js
-│   │   └── usuarioModel.js
-│   ├── routes/
-│   │   ├── jogoRoutes.js
-│   │   ├── avaliacaoRoutes.js
-│   │   └── authRoutes.js
-│   └── app.js
-│
-├──.env
-├── package.json
-└── README.md
+
+node_modules
+
+
+src/
+  config/
+    db.js
+  controllers/
+    jogoController.js
+    avaliacaoController.js
+    authController.js
+  models/
+    jogoModel.js
+    avaliacaoModel.js
+    usuarioModel.js
+  routes/
+    jogoRoutes.js
+    avaliacaoRoutes.js
+    authRoutes.js
+  app.js
+.env
+package.json
+README.md
 
 🚀 Endpoints da API
 🧍‍♂️ Usuários (Autenticação)
-───────────────────────────────────────────────────────────────
-│Método	│        Endpoint      │Descrição                      │
-───────────────────────────────────────────────────────────────
-│POST	│api/auth/registrar	   │Registra um novo usuário       │
-│POST	│api/auth/login	       │Faz login e retorna token JWT  │
-───────────────────────────────────────────────────────────────
+
+│Método	│        Endpoint      │Descrição                      
+
+│POST	│api/auth/registrar	   │Registra um novo usuário       
+│POST	│api/auth/login	       │Faz login e retorna token JWT  
+
 
 
 🎮 Jogos
-─────────────────────────────────────────────────────────────────────────────────────
-│Método	│       Endpoint	 │                    Descrição                          │
-─────────────────────────────────────────────────────────────────────────────────────              
-│POST	│api/jogos	         │Cadastra um novo jogo                                  │
-│GET	│api/jogos	         │Lista todos os jogos                                   │
-│GET	│api/jogos/:id	     │Mostra detalhes de um jogo (com média das avaliações)  │
-│PUT	│api/jogos/:id	     │Atualiza informações de um jogo                        │
-│DELETE	│api/jogos/:id	     │Remove um jogo                                         │
-──────────────────────────────────────────────────────────────────────────────────────
 
+│Método	│   Endpoint	       │ Descrição                          
+│POST	  │api/jogos	         │Cadastra um novo jogo                                  
+│GET	  │api/jogos	         │Lista todos os jogos                                   
+│GET	  │api/jogos/:id	     │Mostra detalhes de um jogo (com média das avaliações)  
+│PUT	  │api/jogos/:id	     │Atualiza informações de um jogo                        
+│DELETE	│api/jogos/:id	     │Remove um jogo                                         
 
 🌟 Avaliações
-────────────────────────────────────────────────────────────────────────
-│Método	│       Endpoint	 │        Descrição                         │
-────────────────────────────────────────────────────────────────────────                   
-│POST	│/api/avaliacoes	 │Cria uma nova avaliação                   │
-│GET	│/api/avaliacoes	 │Lista todas as avaliações                 │
-│GET	│/api/avaliacoes/:id │Lista avaliações de um jogo específico    │
-│DELETE	│/api/avaliacoes/:id │Remove uma avaliação                      │
-────────────────────────────────────────────────────────────────────────
+│Método	│       Endpoint	   │  Descrição                    
+│POST	  │/api/avaliacoes	   │Cria uma nova avaliação                   
+│GET	  │/api/avaliacoes	   │Lista todas as avaliações                 
+│GET	  │/api/avaliacoes/:id │Lista avaliações de um jogo específico   
+│DELETE	│/api/avaliacoes/:id │Remove uma avaliação                      
 
 
 🧾 Exemplos de Corpo JSON
@@ -150,16 +143,16 @@ Login
 
 
 💬 Status Codes Utilizados
-───────────────────────────────────────────────────────────────────────────
-│Código	                        │Significado                               │
-───────────────────────────────────────────────────────────────────────────
-│200 OK	                        │Requisição bem-sucedida                   │
-│201 Created	Recurso         │criado com sucesso                        │
-│400 Bad Request	            │Erro de validação ou dados incorretos     │
-│401 Unauthorized	            │Acesso negado (token ausente ou inválido) │
-│404 Not Found	                │Recurso não encontrado                    │
-│500 Internal Server Error	    │Erro no servidor                          │
-───────────────────────────────────────────────────────────────────────────
+
+│Código	                        │Significado                               
+
+│200 OK	               │Requisição bem-sucedida                   
+│201 Created	Recurso  │criado com sucesso                        
+│400 Bad Request	     │Erro de validação ou dados incorretos     
+│401 Unauthorized	     │Acesso negado (token ausente ou inválido) 
+│404 Not Found	       │Recurso não encontrado                    
+│500 Internal Server Error │Erro no servidor                          
+
 
 Autor
 Pedro Henrique Araújo de Lavor
