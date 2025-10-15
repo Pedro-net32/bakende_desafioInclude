@@ -2,13 +2,13 @@
   "name": "black_end",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "API para cadastro e avaliação de jogos.",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Henrique Araújo de Lavor",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
